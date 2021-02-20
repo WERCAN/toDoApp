@@ -58,6 +58,7 @@ input {
     text-indent: 5px;
     -webkit-transition: 1s;
     transition: 1s;
+    min-width: 330px;
 }
 
 input[type=text]:hover {

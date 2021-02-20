@@ -61,10 +61,12 @@ function dodo(todo) {
 
         let deleteBtn = document.createElement('a');
         deleteBtn.setAttribute("href", "#");
-        deleteBtn.innerHTML = "X";
+        deleteBtn.innerText = "X";
         item.appendChild(deleteBtn);
-        deleteBtn.addEventListener('click', () => {
+
+        deleteBtn.addEventListener('click', (e) => {
             item.remove();
+            StorageItem();
         })
 
         StorageItem();
