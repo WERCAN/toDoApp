@@ -9,13 +9,33 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     background-color: #EEEEEE;
 }
 
+.todo-box {
+    margin: 20px;
+    border: 1px solid #222831;
+}
+
+.todos-task {
+    width: fit-content;
+    height: 100%;
+    background-color: tomato;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.todo-task {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    color: black;
+}
+
 h1 {
-    margin-top: -20%;
+    margin: 0;
     text-align: center;
     font-size: 130px;
     color: #222831;
@@ -31,6 +51,7 @@ li {
     list-style-type: none;
     margin-bottom: 4px;
     border-bottom: 3px solid #30475E;
+    color: black;
 }
 
 a {
@@ -52,7 +73,7 @@ a:hover {
 
 input {
     font-size: 24px;
-    width: 24vw;
+    width: 100%;
     border-color: #222831;
     border-radius: 5px;
     text-indent: 5px;
@@ -74,7 +95,6 @@ button {
     display: inline-block;
     padding: .5rem .5rem;
     margin-top: 10px;
-    margin-left: -250px;
     font-size: 24px;
     border-radius: 4px;
     cursor: pointer;
@@ -84,6 +104,44 @@ button {
     font-weight: 500;
 }
 
+.add {
+    float: right;
+}
+
 button:hover {
     background: white;
+}
+
+.tools {
+    background-color: #1687A7;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.3rem;
+}
+
+.tools button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.task-name {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 11px 0;
+}
+
+.task-box {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin: 10px;
+}
+
+.tools button {
+    padding-bottom: 12px;
 }
